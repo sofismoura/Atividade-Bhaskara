@@ -1,0 +1,36 @@
+package com.mycompany.mavenproject3;
+
+import javax.swing.JOptionPane;
+
+public class Mavenproject3 {
+
+    public static void main(String[] args) {
+        
+        int a;
+
+        digite();
+
+        a = Integer.parseInt.(JOptionPane.showInputDialog("Insira um número: "));
+
+        dobro(a);
+       
+    }
+            
+        static void digite();
+        
+        {
+        
+            JOptionPane.showMessageDialog(null, "Insira o número: ");
+        
+    }
+    
+    static void dobro (int n);
+    
+    { 
+        int d = n * 2;
+        
+        JOptionPane.showMessageDialog(null, "O dobro de " + n + " é " + d);
+        
+    }
+    
+}
