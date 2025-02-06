@@ -1,0 +1,44 @@
+package com.mycompany.bhaskara;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+public class Programa_bhaskara {
+
+    public static void main(String[] args) {
+
+       Scanner sc = new Scanner(System.in);
+        
+        double A=0, B=0, C=0, Delta=0, X1=0, X2=0, X=0;
+        
+        A = Double.parseDouble(JOptionPane.showInputDialog("Por favor, insira o valor de A:"));
+
+        B = Double.parseDouble(JOptionPane.showInputDialog("Por favor, insira o valor de B:"));
+
+        C = Double.parseDouble(JOptionPane.showInputDialog("Por favor, insira o valor de C:"));
+        
+        Delta = B * B - 4 * A *C;
+        
+        if (Delta > 0) {
+            X1 = (-B + Math.sqrt(delta)) / (2 * A);
+            X2 = (-B - Math.sqrt(delta)) / (2 * A);
+
+            JOptionPane.showMessageDialog(null, "Delta = " + Delta);
+
+            JOptionPane.showMessageDialog(null, "X1 = " + X1);
+
+            JOptionPane.showMessageDialog(null, "X2 = " + X2);
+        }
+        
+        else if (delta == 0) {
+            x = -b / (2 * a);
+            JOptionPane.showMessageDialog(null, "Delta = " + Delta);
+
+            JOptionPane.showMessageDialog(null, "x = " + x);
+        }
+        
+        else {
+            JOptionPane.showMessageDialog(null, "Delta = " + Delta);
+
+            JOptionPane.showMessageDialog(null, "Raiz irreal.");
+        }
+    }
+}
